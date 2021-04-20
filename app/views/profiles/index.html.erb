@@ -1,6 +1,11 @@
 <div class="contents row">
   トップページ
   <% @profiles.each do |profile| %>
+    <ul class="more_list">
+      <li>
+        <%= link_to '削除', profile_path(profile.id), method: :delete %>
+      </li>
+    </ul>
     <p><%= profile.image %></p>
     <p><%= profile.position %></p>
     <p><%= profile.dexterity %></p>

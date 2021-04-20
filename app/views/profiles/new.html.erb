@@ -3,8 +3,8 @@
     <h3>投稿する</h3>
     <%= form_with(model: @profile, local: true) do |form| %>
       <%= form.text_field :image, placeholder: "Image Url" %>
-      <%= form.text_field :position, placeholder: "Nickname" %>
-      <%= form.text_field :dexterity %>
+      <%= form.collection_select(:position, Position.all, :id, :name, {}, {class:"genre-select"}) %>
+      <%= form.collection_select(:dexterity, Dexterity.all, :id, :name, {}, {class:"genre-select"}) %>
       <%= form.text_field :team %>
       <%= form.text_field :age %>
       <%= form.submit "SEND" %>
