@@ -11,6 +11,11 @@ class ProfilesController < ApplicationController
     Profile.create(profile_params)
   end
 
+  def destroy
+    profile = Profile.find(params[:id])
+    profile.destroy
+  end
+
   private
   def profile_params
     params.require(:profile).permit(:image, :position, :dexterity, :team, :age)
