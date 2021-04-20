@@ -1,0 +1,10 @@
+<div class="contents row">
+  トップページ
+  <% @profiles.each do |profile| %>
+    <p><%= profile.image %></p>
+    <p><%= profile.position %></p>
+    <p><%= profile.dexterity %></p>
+    <p><%= profile.team %></p>
+    <p><%= profile.age %></p>
+  <% end %>
+</div>

@@ -35,7 +35,6 @@
 | profile   | references | null: false |
 | text      | text       | null: false |
 
-
 ### Association
 
 - belongs_to :user
