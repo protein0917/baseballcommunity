@@ -10,7 +10,7 @@
 
 ### Association
 
-- has_one :profile
+- has_many :profiles
 - has_many :comments
 
 ## profiles テーブル
