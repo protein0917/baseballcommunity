@@ -28,6 +28,8 @@ class ProfilesController < ApplicationController
   end
 
   def show
+    @comment = Comment.new
+    @comments = @profile.comments.includes(:user)
   end
 
   private
