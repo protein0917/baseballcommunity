@@ -1,0 +1,10 @@
+<div class="contents row">
+  <p><%= @name %>さんのプロフィール一覧</p>
+  <% @profiles.each do |profile| %>
+    <%= image_tag profile.image %>
+    <p><%= profile.position.name %></p>
+    <p><%= profile.dexterity.name %></p>
+    <p><%= profile.team %></p>
+    <p><%= profile.age %>歳</p>
+  <% end %>
+</div>

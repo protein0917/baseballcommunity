@@ -3,7 +3,7 @@ class ProfilesController < ApplicationController
   before_action :move_to_index, except: [:index, :show]
 
   def index
-    @profiles = Profile.all
+    @profiles = Profile.includes(:user)
   end
 
   def new
@@ -33,7 +33,7 @@ class ProfilesController < ApplicationController
   private
 
   def profile_params
-    params.require(:profile).permit(:image, :position_id, :dexterity_id, :team, :age)
+    params.require(:profile).permit(:image, :position_id, :dexterity_id, :team, :age).merge(user_id: current_user.id)
   end
 
   def set_profile
