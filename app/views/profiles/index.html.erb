@@ -1,26 +1,6 @@
 <div class="contents row">
   トップページ
   <% @profiles.each do |profile| %>
-    <ul class="more_list">
-      <li>
-        <%= link_to '詳細', profile_path(profile.id), method: :get %>
-      </li>
-      <% if user_signed_in? && current_user.id == profile.user_id %>
-      <li>
-        <%= link_to '編集', edit_profile_path(profile.id), method: :get %>
-      </li>
-      <li>
-        <%= link_to '削除', profile_path(profile.id), method: :delete %>
-      </li>
-      <% end %>
-    </ul>
-    <%= image_tag profile.image %>
-    <a href="/users/<%= profile.user.id %>">
-      <%= profile.user.name %>
-    </a>
-    <p><%= profile.position.name %></p>
-    <p><%= profile.dexterity.name %></p>
-    <p><%= profile.team %></p>
-    <p><%= profile.age %>歳</p>
+    <%= render partial: "profile", locals: { profile: profile } %>
   <% end %>
 </div>

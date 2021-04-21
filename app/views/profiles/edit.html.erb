@@ -1,13 +1,6 @@
 <div class="contents row">
   <div class="container">
     <h3>編集する</h3>
-    <%= form_with(model: @profile, local: true) do |form| %>
-      <%= form.text_field :image, placeholder: "Image Url" %>
-      <%= form.collection_select(:position_id, Position.all, :id, :name, {} ) %>
-      <%= form.collection_select(:dexterity_id, Dexterity.all, :id, :name, {} ) %>
-      <%= form.text_field :team %>
-      <%= form.text_field :age %>
-      <%= form.submit "SEND" %>
-    <% end %>
+    <%= render partial: "form", locals: { profile: @profile } %>
   </div>
 </div>
