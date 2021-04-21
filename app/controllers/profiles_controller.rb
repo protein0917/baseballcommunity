@@ -3,7 +3,7 @@ class ProfilesController < ApplicationController
   before_action :move_to_index, except: [:index, :show]
 
   def index
-    @profiles = Profile.includes(:user)
+    @profiles = Profile.includes(:user).order("created_at DESC")
   end
 
   def new
