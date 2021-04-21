@@ -13,8 +13,8 @@
 ActiveRecord::Schema.define(version: 2021_04_20_085519) do
 
   create_table "profiles", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.integer "position"
-    t.integer "dexterity"
+    t.integer "position_id"
+    t.integer "dexterity_id"
     t.string "team"
     t.integer "age"
     t.text "image"

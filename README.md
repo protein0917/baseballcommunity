@@ -17,8 +17,8 @@
 
 | Column           | Type       | Options     |
 | --------         | ------     | ----------- |
-| position         | integer    | null: false |
-| dexterity        | integer    | null: false |
+| position_id      | integer    | null: false |
+| dexterity_id     | integer    | null: false |
 | team             | string     | null: false |
 | age              | integer    | null: false |
 
