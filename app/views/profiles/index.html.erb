@@ -4,6 +4,9 @@
   <% @profiles.each do |profile| %>
     <ul class="more_list">
       <li>
+        <%= link_to '詳細', profile_path(profile.id), method: :get %>
+      </li>
+      <li>
         <%= link_to '編集', edit_profile_path(profile.id), method: :get %>
       </li>
       <li>

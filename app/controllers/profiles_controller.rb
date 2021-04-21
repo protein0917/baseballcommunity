@@ -1,4 +1,6 @@
 class ProfilesController < ApplicationController
+  before_action :set_profile, only: [:edit, :show]
+
   def index
     @profiles = Profile.all
   end
@@ -17,7 +19,6 @@ class ProfilesController < ApplicationController
   end
 
   def edit
-    @profile = Profile.find(params[:id])
   end
 
   def update
@@ -25,8 +26,16 @@ class ProfilesController < ApplicationController
     profile.update(profile_params)
   end
 
+  def show
+  end
+
   private
+
   def profile_params
     params.require(:profile).permit(:image, :position_id, :dexterity_id, :team, :age)
+  end
+
+  def set_profile
+    @profile = Profile.find(params[:id])
   end
 end
