@@ -16,8 +16,17 @@ class ProfilesController < ApplicationController
     profile.destroy
   end
 
+  def edit
+    @profile = Profile.find(params[:id])
+  end
+
+  def update
+    profile = Profile.find(params[:id])
+    profile.update(profile_params)
+  end
+
   private
   def profile_params
-    params.require(:profile).permit(:image, :position, :dexterity, :team, :age)
+    params.require(:profile).permit(:image, :position_id, :dexterity_id, :team, :age)
   end
 end
