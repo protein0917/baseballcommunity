@@ -2,12 +2,14 @@
 <div class="contents row">
     <div class="more">
       <ul class="more_list">
+      <% if user_signed_in? && current_user.id == @profile.user_id %>
       <li>
         <%= link_to '編集', edit_profile_path(@profile.id), method: :get %>
       </li>
       <li>
         <%= link_to '削除', profile_path(@profile.id), method: :delete %>
       </li>
+      <% end %>
     </ul>
     <%= image_tag @profile.image %>
     <a href="/users/<%= @profile.user.id %>">
