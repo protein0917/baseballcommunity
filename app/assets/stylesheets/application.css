@@ -1,15 +1,216 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+/* 全体 */
+* {
+  box-sizing: border-box;
+}
+.contents {
+  width: 100%;
+  height: 100%;
+  background-color: #DDDDDD;
+  overflow-x: hidden;
+}
+.title2 {
+  height: 100px;
+  width: 100%;
+  font-size: 40px;
+  border-top: solid 3px silver;
+  margin: 0px 0px 30px 0px;
+  padding-top: 30px;
+  text-align: center
+}
+/* ヘッダー */
+header {
+  height: 100px;
+  width: 100%;
+  background-color: #DDDDDD;
+  padding: 10px 0;
+  display: flex;
+}
+.left_header {
+  width: 50%;
+  margin-left: 100px;
+}
+.brand {
+  color: black;
+  font-size: 50px;
+}
+.right_header {
+  width: 50%;
+  margin-right: 100px;
+  position: relative;
+}
+.nav__wrapper {
+  position: absolute;
+  bottom: 10px;
+  right: 0px;
+}
+.nav__item {
+  color: black;
+  font-size: 17px;
+  text-decoration: none;
+  margin-left: 20px;
+}
+/* トップページ */
+.top_image {
+  width: 100%;
+}
+.title {
+  height: 100px;
+  width: 100%;
+  font-size: 40px;
+  margin: 30px 0px 30px 0px;
+  text-align: center
+}
+.main_contents {
+  margin: 0px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.one_contents {
+  border: 1px solid black;
+  width: 340px;
+  margin-bottom: 50px;
+  background-color: white;
+}
+.profile_title {
+  font-size: 20px;
+  margin-top: 10px;
+  text-align: center
+}
+.profile_button {
+  display: flex;
+  margin: 0px 20px;
+  justify-content: flex-end;
+}
+.profile_one_button {
+  margin: 10px 0px 5px 10px;
+}
+.profile_image {
+  width: 300px;
+  height: 200px;
+  margin: 0px 20px 0px 20px;
+}
+.profile_image2 {
+  width: 300px;
+  height: 200px;
+  background-color: #99CCFF;
+  margin: 0px 20px 0px 20px;
+}
+.profile_element_name {
+  color: black;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.profile_element {
+  color: black;
+  font-size: 15px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.profile_element_age {
+  color: black;
+  font-size: 15px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+/* マイページ */
+.main_contents2 {
+  border: 1px solid black;
+  width: 1000px;
+  background-color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+.profile_title2 {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  text-align: center
+}
+.more {
+  display: flex;
+  margin: 0px 50px;
+  justify-content: flex-end;
+}
+.my_page_one_button {
+  font-size: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.my_page_image {
+  width: 900px;
+  height: 600px;
+  margin: 0px 50px 10px 50px;
+}
+.my_page_element {
+  font-size: 20px;
+  margin: 10px 0px 10px 50px;
+}
+.my_page_element2 {
+  font-size: 20px;
+  margin: 10px 0px 20px 50px;
+}
+.my_page_element3 {
+  font-size: 20px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+.my_page_element4 {
+  font-size: 20px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+/* プロフィール一覧 */
+.main_contents3 {
+  border: 1px solid black;
+  width: 1000px;
+  background-color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+.my_page_image2 {
+  width: 900px;
+  height: 600px;
+  margin: 50px 50px 10px 50px;
+}
+
+/* ログイン画面 */
+.login_contents {
+  height: 100vh;
+  width: 100%;
+}
+.login_one_contents {
+  border: 1px solid black;
+  width: 500px;
+  background-color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+.login_one_contents2 {
+  margin: 20px 40px;
+}
+.actions {
+  margin-top: 10px;
+}
+
+/* プロフィール作成完了 */
+.login_one_contents3 {
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+.profile_end {
+  font-size: 20px;
+}

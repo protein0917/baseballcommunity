@@ -4,35 +4,39 @@
     <title>Baseballcommunity</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <header class="header">
-      <div class="header__bar row">
-        <h1 class="grid-6"><a href="/">BaseballCommunity</a></h1>
-        <% if user_signed_in? %>
-          <div class="user_nav grid-6">
+    <header>
+      <div class="left_header">
+        <h1 class="brand" >BaseballCommunity</h1>
+      </div>
+      <div class="right_header">
+        <ul class="nav__wrapper">
+          <li class="nav__item" >
+            <% if user_signed_in? %>
             <%= current_user.name %>
-            <%= link_to "マイページ", "/profiles/#{current_user.id}" %>
-            <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
-            <%= link_to "投稿する", new_profile_path, class: "post" %>
-          </div>
-        <% else %>
-          <div class="grid-6">
-            <%= link_to "ログイン", new_user_session_path, class: "post" %>
-            <%= link_to "新規登録", new_user_registration_path, class: "post" %>
-          </div>
-        <% end %>
+            <%= link_to "トップページ", root_path, class: "nav__item" %>
+            <%= link_to "マイページ", "/profiles/#{current_user.id}", class: "nav__item" %>
+            <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "nav__item" %>
+            <%= link_to "プロフィール作成", new_profile_path, class: "nav__item" %>
+            <% else %>
+            <%= link_to "ログイン", new_user_session_path, class: "nav__item" %>
+            <%= link_to "新規登録", new_user_registration_path, class: "nav__item" %>
+            <% end %>
+          </li>
+        </ul>
       </div>
     </header>
+
+    <div class="top_image"></div>
+
     <%= yield %>
+
     <footer>
-      <p>
-        BaseballCommunity
-      </p>
     </footer>
   </body>
 </html>

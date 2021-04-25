@@ -1,21 +1,24 @@
-<ul class="more_list">
-  <li>
-    <%= link_to '詳細', profile_path(profile.id), method: :get %>
-  </li>
-  <% if user_signed_in? && current_user.id == profile.user_id %>
-  <li>
-    <%= link_to '編集', edit_profile_path(profile.id), method: :get %>
-  </li>
-  <li>
-    <%= link_to '削除', profile_path(profile.id), method: :delete %>
-  </li>
-  <% end %>
-</ul>
-<%= image_tag profile.image %>
-<a href="/users/<%= profile.user.id %>">
-  <%= profile.user.name %>
-</a>
-<p><%= profile.position.name %></p>
-<p><%= profile.dexterity.name %></p>
-<p><%= profile.team %></p>
-<p><%= profile.age %>歳</p>
+<div class="one_contents">
+  <div class="profile_title">プロフィール</div>
+  <div class="profile_button">
+    <p class="profile_one_button">
+      <%= link_to '詳細', profile_path(profile.id), method: :get %>
+    </p>
+    <% if user_signed_in? && current_user.id == profile.user_id %>
+    <p class="profile_one_button">
+      <%= link_to '編集', edit_profile_path(profile.id), method: :get %>
+    </p>
+    <p class="profile_one_button">
+      <%= link_to '削除', profile_path(profile.id), method: :delete %>
+    </p>
+    <% end %>
+  </div>
+  <%= image_tag profile.image, class: 'profile_image' %>
+  <p class="profile_element_name" href="/users/<%= profile.user.id %>">
+    <%= profile.user.name %>
+  </p>
+  <p class="profile_element"><%= profile.position.name %></p>
+  <p class="profile_element"><%= profile.dexterity.name %></p>
+  <p class="profile_element"><%= profile.team %></p>
+  <p class="profile_element_age"><%= profile.age %>歳</p>
+</div>

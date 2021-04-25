@@ -1,10 +1,14 @@
 <div class="contents row">
-  <p><%= @name %>さんのプロフィール一覧</p>
-  <% @profiles.each do |profile| %>
-    <%= image_tag profile.image %>
-    <p><%= profile.position.name %></p>
-    <p><%= profile.dexterity.name %></p>
-    <p><%= profile.team %></p>
-    <p><%= profile.age %>歳</p>
-  <% end %>
+  <div class="title2"><%= @name %>さんのプロフィール一覧</div>
+
+    <% @profiles.each do |profile| %>
+      <div class="main_contents3">
+        <%= image_tag profile.image, class: 'my_page_image2' %>
+        <p class="my_page_element"><%= profile.position.name %></p>
+        <p class="my_page_element"><%= profile.dexterity.name %></p>
+        <p class="my_page_element"><%= profile.team %></p>
+        <p class="my_page_element2"><%= profile.age %>歳</p>
+      </div>
+    <% end %>
+
 </div>

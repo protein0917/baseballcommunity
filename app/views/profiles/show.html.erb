@@ -1,44 +1,44 @@
-詳細
-<div class="contents row">
+<div class="contents">
+  <div class="title2">マイページ</div>
+  <div class="main_contents2">
+    <div class="profile_title2">プロフィール</div>
     <div class="more">
-      <ul class="more_list">
       <% if user_signed_in? && current_user.id == @profile.user_id %>
-      <li>
+      <p class="my_page_one_button">
         <%= link_to '編集', edit_profile_path(@profile.id), method: :get %>
-      </li>
-      <li>
+      </p>
+      <p class="my_page_one_button">
         <%= link_to '削除', profile_path(@profile.id), method: :delete %>
-      </li>
+      </p>
       <% end %>
-    </ul>
-    <%= image_tag @profile.image %>
-    <a href="/users/<%= @profile.user.id %>">
+    </div>
+    <%= image_tag @profile.image, class: 'my_page_image' %>
+    <a class="my_page_element", href="/users/<%= @profile.user.id %>">
       <%= @profile.user.name %>
     </a>
-    <p><%= @profile.position.name %></p>
-    <p><%= @profile.dexterity.name %></p>
-    <p><%= @profile.team %></p>
-    <p><%= @profile.age %>歳</p>
-    </div>
+    <p class="my_page_element"><%= @profile.position.name %></p>
+    <p class="my_page_element"><%= @profile.dexterity.name %></p>
+    <p class="my_page_element"><%= @profile.team %></p>
+    <p class="my_page_element2"><%= @profile.age %>歳</p>
 
-    <div class="container">
+    
     <% if user_signed_in? %>
       <%= form_with(model: [@profile, @comment], local: true) do |form| %>
-        <%= form.text_area :text, placeholder: "コメントする", rows: "2" %>
-        <%= form.submit "SEND" %>
+        <p class="my_page_element3"><%= form.text_area :text, placeholder: "コメントする", rows: "2" %></p>
+        <p class="my_page_element3"><%= form.submit "SEND" %></p>
       <% end %>
     <% else %>
       <strong><p>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</p></strong>
     <% end %>
 
-    <div class="comments">
-      <h4>＜コメント一覧＞</h4>
-      <% @comments.each do |comment| %>
-        <p>
-          <strong><%= link_to comment.user.name, "/profiles/#{comment.user_id}" %>：</strong>
-          <%= comment.text %>
-        </p>
-      <% end %>
-    </div>
+
+    <h1 class="my_page_element3">＜コメント一覧＞</h1>
+    <% @comments.each do |comment| %>
+      <p class="my_page_element4">
+        <strong><%= link_to comment.user.name, "/profiles/#{comment.user_id}" %>：</strong>
+        <%= comment.text %>
+      </p>
+    <% end %>
+
   </div>
 </div>
