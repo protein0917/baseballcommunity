@@ -21,6 +21,7 @@
 | dexterity_id     | integer    | null: false |
 | team             | string     | null: false |
 | age              | integer    | null: false |
+| image            | text       | null: false |
 
 ### Association
 
