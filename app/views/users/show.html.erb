@@ -1,4 +1,4 @@
-<div class="contents row">
+<div class="contents">
   <div class="title2"><%= @name %>さんのプロフィール一覧</div>
 
     <% @profiles.each do |profile| %>
@@ -10,5 +10,9 @@
         <p class="my_page_element2"><%= profile.age %>歳</p>
       </div>
     <% end %>
+
+  <div class="footer">
+    BaseballCommunity
+  </div>
 
 </div>

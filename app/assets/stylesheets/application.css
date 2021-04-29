@@ -115,6 +115,13 @@ header {
   margin-left: 20px;
   margin-bottom: 20px;
 }
+.footer {
+  height: 50px;
+  width: 100%;
+  padding: 15px 100px;
+  color: white;
+  background-color: black;
+}
 
 /* マイページ */
 .main_contents2 {
