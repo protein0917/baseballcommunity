@@ -22,7 +22,7 @@ https://baseballcommunity.herokuapp.com/
 ## 削除ページ
 ![削除ページ](https://gyazo.com/f99ea9aa60292d18a67d6e02500dfaa2.png)
 ## マイページ
-![マイページ](https://gyazo.com/a8a0aeb4974c24e6abb35bcaf17e715c.gif)
+![マイページ](https://gyazo.com/9dcd9b1665355062b00868cbf99f4b00.gif)
 ## プロフィール一覧ページ
 ![プロフィール一覧ページ](https://gyazo.com/cd603c12fc205e1e0d1f856e5db9186e.gif)
 
