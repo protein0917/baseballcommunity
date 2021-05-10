@@ -22,9 +22,9 @@ https://baseballcommunity.herokuapp.com/
 ## 削除ページ
 ![削除ページ](https://gyazo.com/f99ea9aa60292d18a67d6e02500dfaa2.png)
 ## マイページ
-![マイページ](https://gyazo.com/9dcd9b1665355062b00868cbf99f4b00.gif)
+![マイページ](https://gyazo.com/0e77caa6eefaa6af4b9125ad7e35f61b.png)
 ## プロフィール一覧ページ
-![プロフィール一覧ページ](https://gyazo.com/cd603c12fc205e1e0d1f856e5db9186e.gif)
+![プロフィール一覧ページ](https://gyazo.com/edcbc6af00328a2cb106be8cf5ad84f0.png)
 
 # 工夫したポイント
 できるだけ見やすく使いやすいアプリにするために、シンプルなデザインにしました。またプロフィールを一覧で表示するだけでなく、各プロフィールにコメントができるようにしてユーザー同士のコミュニケーションを測れるように工夫しました。
