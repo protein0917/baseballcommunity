@@ -7,25 +7,24 @@ https://baseballcommunity.herokuapp.com/
 # 制作背景(意図)
 私は大学生の頃に、部活とサークルが無かった関係でみんなで0からチームを立ち上げて社会人野球に取り組んだ経験があります。同じ大学内の友達に声をかけてメンバーを集め、他チームと練習試合をしながら野球に取り組んだ事はとても大変でした。このような経験を通して、野球をしたいと思っているが環境が無くて困っているという友達がいる事、メンバーが足りていない他の社会人野球チームが意外と存在している事などが分かりました。もし野球をしたい人とメンバーを集めている人がコミュニケーションを取る事ができればこの問題は解決できるのではないかと考えました。そうすれば私たちはメンバー集めやチームの立ち上げなどの大変な思いをせずに社会人野球に取り組めたのではないかと思います。みんなが気軽に野球をできるきっかけを提供したくてこのアプリを作りました。
 # DEMO
-![トップページ](https://gyazo.com/4dc8aadde687b85d2bed16aac378540c.gif)
 ## トップページ
-https://gyazo.com/4dc8aadde687b85d2bed16aac378540c
+![トップページ](https://gyazo.com/4dc8aadde687b85d2bed16aac378540c.gif)
 ## ユーザー登録ページ
-https://gyazo.com/db3a574a26858d25e4de563563acfb18
+![ユーザー登録ページ](https://gyazo.com/db3a574a26858d25e4de563563acfb18.png)
 ## プロフィール作成ページ
-https://gyazo.com/01a2c3d5a8e84643e37d55042f157b1d
+![プロフィール作成ページ](https://gyazo.com/01a2c3d5a8e84643e37d55042f157b1d.png)
 ## プロフィール詳細ページ
-https://gyazo.com/122356ad64ccabc1073a871999252625
+![プロフィール詳細ページ](https://gyazo.com/122356ad64ccabc1073a871999252625.png)
 ## コメント機能
-https://gyazo.com/64417e81fc3c95c5cd620b6d140fd8c4
+![コメント機能](https://gyazo.com/64417e81fc3c95c5cd620b6d140fd8c4.png)
 ## 編集ページ
-https://gyazo.com/486ff8ac3b6bac48e3ed22260301fb47
+![編集ページ](https://gyazo.com/486ff8ac3b6bac48e3ed22260301fb47.png)
 ## 削除ページ
-https://gyazo.com/f99ea9aa60292d18a67d6e02500dfaa2
+![削除ページ](https://gyazo.com/f99ea9aa60292d18a67d6e02500dfaa2.png)
 ## マイページ
-https://gyazo.com/a8a0aeb4974c24e6abb35bcaf17e715c
+![マイページ](https://gyazo.com/a8a0aeb4974c24e6abb35bcaf17e715c.png)
 ## プロフィール一覧ページ
-https://gyazo.com/cd603c12fc205e1e0d1f856e5db9186e
+![プロフィール一覧ページ](https://gyazo.com/cd603c12fc205e1e0d1f856e5db9186e.png)
 
 # 工夫したポイント
 できるだけ見やすく使いやすいアプリにするために、シンプルなデザインにしました。またプロフィールを一覧で表示するだけでなく、各プロフィールにコメントができるようにしてユーザー同士のコミュニケーションを測れるように工夫しました。
